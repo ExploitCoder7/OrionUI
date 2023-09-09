@@ -5,7 +5,7 @@ It Works For Mobile And Computer AND Has Custom Key System
 ```lua
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Unknownkellymc1/Orion/main/source')))()
 ```
-# Creating a Window
+## Creating a Window
 ```lua
 local Window = OrionLib:MakeWindow({Name = "Title of the library", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
@@ -21,7 +21,7 @@ Icon = <string> - URL to the image you want displayed on the window.
 CloseCallback = <function> - Function to execute when the window is closed.
 ]]
 ```
-# Custom Key System
+## Custom Key System
 Remove Orion Library Window and choose this instead
 ```lua
 local Window = OrionLib:MakeWindow({Name = "Key System", HidePremium = false, SaveConfig = true, IntroEnabled = false})
@@ -117,6 +117,7 @@ Tab:AddButton({
 
 -- [[
 Key = <string> - The Key
+Basically The String Is " " that
 ]]
 ```
 ## Creating a Tab
