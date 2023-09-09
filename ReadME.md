@@ -116,5 +116,5 @@ Tab:AddButton({
 
 -- [[
 getgenv().Key = <string> - The Key
-]]
+]] --
 ```
