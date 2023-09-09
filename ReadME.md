@@ -22,7 +22,7 @@ CloseCallback = <function> - Function to execute when the window is closed.
 ]]
 ```
 ## Custom Key System
-Remove Orion Library Window and choose this instead
+Remove Orion Library Window and choose this instead and yes the "Script here!" you can turn it into a loadstring or no.
 ```lua
 local Window = OrionLib:MakeWindow({Name = "Key System", HidePremium = false, SaveConfig = true, IntroEnabled = false})
 
