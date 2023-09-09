@@ -118,7 +118,7 @@ Tab:AddButton({
 getgenv().Key = <string> - The Key
 ]]
 ```
-# Creating Tabs
+## Creating A Tab
 ```lua
 local Tab = Window:MakeTab({
 	Name = "Tab 1",
