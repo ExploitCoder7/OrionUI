@@ -282,7 +282,7 @@ CoolParagraph:Set("Paragraph New!", "New Paragraph Content!")
 ```
 
 
-## Creating an TextBox
+## Creating A TextBox
 ```lua
 Tab:AddTextbox({
 	Name = "Textbox",
