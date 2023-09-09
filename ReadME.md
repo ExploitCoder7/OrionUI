@@ -21,6 +21,7 @@ CloseCallback = <function> - Function to execute when the window is closed.
 ]]
 ```
 # Custom Key System
+```lua
 Delete The Orion Library Window Btw
 local Window = OrionLib:MakeWindow({Name = "Key System", HidePremium = false, SaveConfig = true, IntroEnabled = false})
 
@@ -112,3 +113,4 @@ Tab:AddButton({
 })
     end
 })
+```
