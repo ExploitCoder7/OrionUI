@@ -43,7 +43,7 @@ OrionLib:MakeNotification({
 	Time = 2
 })
 
-getgenv().Key = "Key Here (Dont Touch Anything Only This And The Get Key) "
+getgenv().Key = " "
 getgenv().KeyInput = "string"
 
 function Destroy()
@@ -113,4 +113,7 @@ Tab:AddButton({
 })
     end
 })
+
+-- [
+getgenv().Key = <string> - The Key
 ```
