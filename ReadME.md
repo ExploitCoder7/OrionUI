@@ -5,7 +5,7 @@ It Works For Mobile And Computer AND Has Custom Key System
 ```lua
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Unknownkellymc1/Orion/main/source')))()
 ```
-# Creating Window
+# Creating a Window
 ```lua
 local Window = OrionLib:MakeWindow({Name = "Title of the library", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
@@ -22,7 +22,7 @@ CloseCallback = <function> - Function to execute when the window is closed.
 ]]
 ```
 # Custom Key System
-Delete The Window If You Want This And This Will Be Main Window
+Remove Orion Library Window and choose this instead
 ```lua
 local Window = OrionLib:MakeWindow({Name = "Key System", HidePremium = false, SaveConfig = true, IntroEnabled = false})
 
@@ -119,7 +119,7 @@ Tab:AddButton({
 getgenv().Key = <string> - The Key
 --
 ```
-## Creating A Tab
+## Creating a Tab
 ```lua
 local Tab = Window:MakeTab({
 	Name = "Tab 1",
