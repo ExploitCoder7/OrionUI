@@ -116,8 +116,7 @@ Tab:AddButton({
 })
 
 -- [[
-Key = <string> - The Key
-Basically The String Is " " that
+getgenv().Key = <string> - The Key
 ]]
 ```
 ## Creating a Tab
