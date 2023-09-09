@@ -116,8 +116,8 @@ Tab:AddButton({
 })
 
 -- [[
-getgenv().Key = <string> - The Key
---
+Key = <string> - The Key
+]]
 ```
 ## Creating a Tab
 ```lua
