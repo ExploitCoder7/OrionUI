@@ -22,8 +22,9 @@ CloseCallback = <function> - Function to execute when the window is closed.
 ]]
 ```
 ## Custom Key System
-Remove Orion Library Window and choose this instead and yes the "Script here!" you can turn it into a loadstring or no.
+Remove Orion Library Window if you want to use this
 ```lua
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Unknownkellymc1/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "Key System", HidePremium = false, SaveConfig = true, IntroEnabled = false})
 
 local GameId = game.PlaceId 
@@ -40,7 +41,7 @@ local plrcount = #plrs:GetPlayers()
 OrionLib:MakeNotification({
 	Name = "Logged In!",
 	Content = "Logged In As " .. plrname .. " ",
-	Image = "rbxassetid://4483345998",
+	Image = "rbxassetid://7743875962",
 	Time = 2
 })
 
@@ -49,14 +50,14 @@ getgenv().KeyInput = "string"
 
 function Destroy()
          OrionLib:Destroy()
-end;
+end
 
 function CheckKey()
          if Key == KeyInput 
          then
                Destroy()
                CorrectKey()
-               Script Here!
+               print("script here")
          end
 end;
 
@@ -73,7 +74,7 @@ function IncorrectKey()
                OrionLib:MakeNotification({
 	Name = "Incorrect Key",
 	Content = "Entered Incorrect Key, Please Enter The Correct Key",
-	Image = "rbxassetid://4483345998",
+	Image = "rbxassetid://7734084236",
 	Time = 2
 })
 end
@@ -91,32 +92,25 @@ Tab:AddTextbox({
 	TextDisappear = false,
 	Callback = function(Value)
 		KeyInput = Value
-	end	  
-})
-
-Tab:AddButton({
-	Name = "Check Key",
-	Callback = function()
-              IncorrectKey()
-              CheckKey()
-    end
+         CheckKey()
+         IncorrectKey()
+	end
 })
 
 Tab:AddButton({
 	Name = "Get Key",
 	Callback = function()
-              Key Link Here!
+              setclipboard("your key link here")
               OrionLib:MakeNotification({
 	Name = "Key Link",
 	Content = "Key Link Copied",
-	Image = "rbxassetid://4483345998",
+	Image = "rbxassetid://7733978098",
 	Time = 2
 })
     end
 })
-
 --[[
-getgenv().Key = <string> - The Key
+Key = <string> - Your Key
 ]]
 ```
 ## Creating a Tab
